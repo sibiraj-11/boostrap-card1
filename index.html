@@ -39,9 +39,17 @@
       padding-inline: 77px;
     }
 
+    .color{
+      color: rgb(148 163 184 / 1);
+    }
+
     .input-group{
       border-radius: 2rem;
     }
+    .form-control::placeholder {
+  color: #adb5bd;  
+  opacity: 1;     
+}
 
     @media (max-width: 768px) {
        .container {
@@ -71,14 +79,16 @@
         created, along with practical design tips.
       </p>
   <form>
-  <div class="input-group rounded p-2">
-    <input type="text" class="form-control" placeholder="Your first name" required>
-    <input type="email" class="form-control" placeholder="Your email" required>
-    <button class="btn btn-primary" type="submit">Get my first template</button>
+  <div class="input-group rounded-pill overflow-hidden" style="background: #1a2634;">
+    <input type="text" class="form-control border-0 bg-transparent text-white" placeholder="Your first name" aria-label="First name">
+    <div class="input-group-text bg-transparent border-0 text-secondary" style="border-left: 1px solid #2d3b4d;">|</div>
+    <input type="email" class="form-control border-0 bg-transparent text-white" placeholder="Your email" aria-label="Email">
+    <button class="btn btn-primary  px-4" type="submit" style="margin-left: 8px;;">Get my first template</button>
   </div>
 </form>
 
-<div class="text-center mb-5" style="color: white;">
+
+<div class="text-center mt-2 mb-5" style="color: white;">
       Join 4,587+ creators. No spam guarantee. Unsubscribe anytime.
     </div>
 
@@ -89,7 +99,7 @@
           <div class="d-flex align-items-center mb-2">
             <h5 class="mb-0 fw-semibold text-light">Templates in Figma</h5>
           </div>
-          <p class="mb-0 text-light-emphasis">
+          <p class="mb-0 color">
             I’ll send you exclusive early access to new templates before they’re officially released on the website.
           </p>   
         </div>
@@ -102,7 +112,7 @@
            
             <h5 class="mb-0 fw-semibold text-light">Latest updates</h5>
           </div>
-          <p class="mb-0 text-light-emphasis">
+          <p class="mb-0 color">
             I’ll also share practical insights on visual design, modern trends I’ve discovered, and valuable updates.
           </p>
         </div>
